@@ -1,14 +1,9 @@
 // font
-import { Dancing_Script, Poppins, Marck_Script } from "next/font/google";
+import { Poppins, Marck_Script, Montserrat } from "next/font/google";
 
 // components
 import NavBar from "@/components/navbar/navbar.component";
-
-const dancing_script = Dancing_Script({
-  weight: ["400", "600", "700"],
-  subsets: ["latin"],
-  variable: "--dancing-script",
-});
+import Hero from "@/components/hero/hero.component";
 
 const mark_script = Marck_Script({
   weight: "400",
@@ -16,28 +11,20 @@ const mark_script = Marck_Script({
   variable: "--mark-script",
 });
 
-const poppins = Poppins({
+const montserrat = Montserrat({
   weight: ["400", "500", "600", "800"],
   subsets: ["latin"],
-  variable: "--poppins",
+  variable: "--montserrat",
 });
 
 export default function Home() {
   return (
-    <div
+    <main
       data-theme={"light"}
-      className={`${dancing_script.variable} ${poppins.variable} ${poppins.className} ${mark_script.variable} relative`}
+      className={`${montserrat.variable} ${mark_script.variable} ${montserrat.className} relative min-h-screen w-screen bg-orange-50`}
     >
       <NavBar />
-      <div className="relative">
-        <div className="introduction-profile-background">
-          <div className="content">{/* <Introduction/> */}</div>
-        </div>
-        <div className="bg-soft-white pt-30"></div>
-        <div className="bg-gray-900"></div>
-        <div className="blog-background"></div>
-        <div className="bg-soft-white"></div>
-      </div>
-    </div>
+      <Hero />
+    </main>
   );
 }

@@ -3,7 +3,6 @@
 
 @theme {
   /* fonts family */
-  --font-poppins: "Poppins", sans-serif;
-  --font-dancing-script: "Dancing Script", cursive;
+  --font-montserrat: "Montserrat", sans-serif;
   --font-marck-script: "Marck Script", cursive;
 }

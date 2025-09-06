@@ -13,8 +13,8 @@ const nav_links = [
 
 const NavBar: FC = () => {
   return (
-    <div className="flex w-full justify-center bg-orange-50 py-8 text-black">
-      <div className="flex h-full w-7xl items-center justify-between px-8">
+    <nav className="flex w-full justify-center bg-orange-50 py-8 text-black">
+      <div className="flex w-7xl items-center justify-between px-8">
         {/* Left - Logo */}
         <div className="font-marck-script text-4xl font-bold">Ashish</div>
 
@@ -43,7 +43,7 @@ const NavBar: FC = () => {
           <MenuIcon size={20} className="text-black" />
         </button>
       </div>
-    </div>
+    </nav>
   );
 };
 
