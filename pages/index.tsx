@@ -5,6 +5,7 @@ import { Poppins, Marck_Script, Montserrat } from "next/font/google";
 import NavBar from "@/components/navbar/navbar.component";
 import Hero from "@/components/hero/hero.component";
 import Introduction from "@/components/introduction/introduction.component";
+import WorkExperience from "@/components/work-experience/work-experience.component";
 
 const mark_script = Marck_Script({
   weight: "400",
@@ -27,6 +28,7 @@ export default function Home() {
       <NavBar />
       <Hero />
       <Introduction/>
+      <WorkExperience/>
     </main>
   );
 }

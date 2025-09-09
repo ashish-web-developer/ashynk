@@ -10,11 +10,10 @@ const WorkDetailCard: FC<{
   children: ReactNode;
 }> = ({ label, description, children }) => {
   return (
-    <div className="inline-flex items-center gap-4 rounded-lg border-2 border-gray-100 px-8 py-6">
+    <div className="inline-flex items-center gap-4 rounded-lg border-2 border-gray-100 px-6 py-4 md:px-8 md:py-6">
       {children}
-
       <div className="flex flex-col">
-        <h5 className="text-2xl font-bold text-black">{label}</h5>
+        <h5 className="text-lg font-bold text-black md:text-2xl">{label}</h5>
         <span className="text-sm font-semibold text-gray-600">
           {description}
         </span>
