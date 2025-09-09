@@ -57,7 +57,7 @@ const WorkExperience: FC = () => {
   return (
     <section className="flex w-full justify-center py-8 md:py-16">
       <div className="relative w-7xl px-8">
-        <h2 className="text-center text-5xl font-bold text-gray-800">
+        <h2 className="text-center text-3xl font-bold text-gray-800 md:text-5xl">
           My Work Experience
         </h2>
         <div className="mt-8">
