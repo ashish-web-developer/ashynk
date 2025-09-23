@@ -1,4 +1,3 @@
-import dynamic from "next/dynamic";
 // types
 import type { FC } from "react";
 
@@ -62,8 +61,8 @@ const WorkExperience: FC = () => {
         </h2>
         <div className="mt-8">
           <ol>
-            {work_experience_details.map((detail) => {
-              return <VerticalTimeLineItem {...detail} />;
+            {work_experience_details.map((detail,index) => {
+              return <VerticalTimeLineItem {...detail} key= {index} />;
             })}
           </ol>
         </div>

@@ -39,19 +39,21 @@ const work_type_details = [
 
 const Introduction: FC = () => {
   return (
-    <section className="flex w-full justify-center bg-white md:py-32 py-8">
+    <section className="flex w-full justify-center bg-white py-8 md:py-32">
       <div className="relative w-7xl px-8">
-        <div className="grid grid-cols-1 md:gap-20 gap-6 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-20">
           <div className="order-2 flex flex-col gap-4 md:order-1">
-            {work_type_details.map(({ icon, ...detail }) => (
-              <WorkDetailCard {...detail}>{icon}</WorkDetailCard>
+            {work_type_details.map(({ icon, ...detail }, index) => (
+              <WorkDetailCard {...detail} key={index}>
+                {icon}
+              </WorkDetailCard>
             ))}
           </div>
-          <div className="order-1 md:space-y-8 space-y-3 md:order-2">
-            <h4 className="md:text-5xl text-3xl font-bold text-gray-800">
+          <div className="order-1 space-y-3 md:order-2 md:space-y-8">
+            <h4 className="text-3xl font-bold text-gray-800 md:text-5xl">
               What Do I Help?
             </h4>
-            <div className="md:space-y-8 space-y-4 font-semibold text-gray-500">
+            <div className="space-y-4 font-semibold text-gray-500 md:space-y-8">
               <p>
                 I help businesses craft scalable, user-friendly digital products
                 by building modern web applications with React.js, Next.js, and

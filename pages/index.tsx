@@ -1,5 +1,5 @@
 // font
-import { Poppins, Marck_Script, Montserrat } from "next/font/google";
+import { Marck_Script, Montserrat } from "next/font/google";
 
 // components
 import NavBar from "@/components/navbar/navbar.component";

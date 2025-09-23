@@ -28,7 +28,7 @@ const projects_data = [
 ];
 
 export type IProjectData = (typeof projects_data)[number];
-const ProjectsList: FC<{}> = ({}) => {
+const ProjectsList: FC = () => {
   return (
     <section className="flex w-full justify-center bg-white py-8 md:py-16">
       <div className="relative flex w-7xl flex-col overflow-hidden px-8">

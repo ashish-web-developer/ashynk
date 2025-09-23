@@ -1,8 +1,6 @@
 // types
 import type { FC, ReactNode } from "react";
 
-// icons
-import { Laptop } from "lucide-react";
 
 const WorkDetailCard: FC<{
   label: string;

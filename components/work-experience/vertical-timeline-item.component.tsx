@@ -22,7 +22,6 @@ const VerticalTimeLineItem: FC<IWorkExpericeDetail> = ({
   designation,
   circle_color,
 }) => {
-  const color = "red";
   return (
     <li className="grid grid-cols-1 md:grid-cols-10">
       {/** Company details */}

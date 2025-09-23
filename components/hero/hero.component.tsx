@@ -23,9 +23,10 @@ const Hero: FC = () => {
           />
         </div>
         <h3 className="pt-16 text-5xl leading-snug font-bold tracking-wider">
-          Hey There,
-          <br /> I'm Ashish
+          Hey&nbsp;There,&nbsp;
+          <br /> I&apos;m&nbsp;Ashish
         </h3>
+
         <p className="pt-4 text-base font-medium md:float-right">
           I design beautifully Simple <br />
           things, and I love what I do
