@@ -4,7 +4,7 @@ import type { FC } from "react";
 
 const Hero: FC = () => {
   return (
-    <section className="flex h-[calc(100vh-108px)] max-h-[900px] min-h-[720px] w-full justify-center overflow-x-hidden sm:min-h-0">
+    <section className="flex h-[calc(100vh-108px)] max-h-[700px] min-h-[720px] w-full justify-center overflow-x-hidden sm:min-h-0 md:max-h-[900px]">
       <div className="relative h-full w-7xl px-8">
         <div className="absolute bottom-[0] left-1/2 h-[500px] w-[500px] -translate-x-1/2 sm:h-[560px] sm:w-[560px]">
           <Image
