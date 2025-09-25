@@ -12,14 +12,14 @@ const Footer: FC = () => {
   return (
     <section className="flex w-full justify-center py-8 md:py-16">
       <div className="relative w-7xl px-8">
-        <div className="flex w-full flex-col justify-between md:gap-0 gap-12 md:flex-row">
+        <div className="flex w-full flex-col justify-between gap-12 md:flex-row md:gap-0">
           <div className="space-y-8 text-gray-800 md:space-y-16">
             <h2 className="hidden text-5xl leading-[1.2] font-bold md:block">
-              Let's make something
+              Let&apos;s make something
               <br /> amazing together.
             </h2>
             <h2 className="block text-4xl leading-[1.4] font-bold md:hidden">
-              Let's make <br />
+              Let&apos;s make <br />
               something
               <br /> amazing together.
             </h2>
@@ -30,7 +30,8 @@ const Footer: FC = () => {
               </span>
             </h4>
           </div>
-          <div className="md:space-y-6 space-y-4  text-gray-800">
+
+          <div className="space-y-4 text-gray-800 md:space-y-6">
             <div>
               <h3 className="text-2xl font-bold">Information</h3>
               <address className="text-base font-semibold text-gray-500">
@@ -38,8 +39,12 @@ const Footer: FC = () => {
               </address>
             </div>
             <ul className="list-none font-semibold text-gray-500">
-              {nav_links.map(({ label }) => {
-                return <li className="md:leading-12 leading-8">{label}</li>;
+              {nav_links.map(({ label }, index) => {
+                return (
+                  <li key={index} className="leading-8 md:leading-12">
+                    {label}
+                  </li>
+                );
               })}
             </ul>
           </div>
