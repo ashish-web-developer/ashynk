@@ -50,7 +50,7 @@ const Footer: FC = () => {
           </div>
         </div>
         <div className="my-6 border-t-2 border-gray-300"></div>
-        <div>
+        <div className="hidden md:block">
           {/* Left - Logo */}
           <div className="font-marck-script inline text-4xl font-bold">
             Ashish
@@ -60,6 +60,15 @@ const Footer: FC = () => {
             {" "}
             @2025. All Rights Reserved
           </span>
+        </div>
+        <div className="flex flex-col text-center gap-4 md:hidden">
+          {/* Left - Logo */}
+          <div className="font-marck-script inline text-3xl font-bold">
+            Ashish
+          </div>{" "}
+          <div className="font-semibold text-gray-500">
+            @2025. All Rights Reserved
+          </div>
         </div>
       </div>
     </section>
