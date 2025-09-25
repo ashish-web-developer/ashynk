@@ -7,6 +7,7 @@ import Hero from "@/components/hero/hero.component";
 import Introduction from "@/components/introduction/introduction.component";
 import WorkExperience from "@/components/work-experience/work-experience.component";
 import ProjectsList from "@/components/projects-list/projects-list.component";
+import Footer from "@/components/footer/footer.component";
 
 const mark_script = Marck_Script({
   weight: "400",
@@ -31,6 +32,7 @@ export default function Home() {
       <Introduction />
       <WorkExperience />
       <ProjectsList />
+      <Footer />
     </main>
   );
 }
